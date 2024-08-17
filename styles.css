@@ -64,7 +64,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   /* Добавляем высоту блока (если требуется) */
-  height: 65vh;
+  height: 55vh;
   /* Выравнивание содержимого по центру */
   display: flex;
   flex-direction: column; /* Вертикальное направление для выравнивания */
