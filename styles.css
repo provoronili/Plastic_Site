@@ -7,94 +7,32 @@ body {
 }
 
 .button-yellow {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #fbbf24;
-  /* Yellow color */
-  color: #fff;
-  border-radius: 0.5rem;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  @apply inline-block px-6 py-3 bg-yellow-500 text-white rounded-lg font-bold text-center no-underline transition duration-300 ease-in-out;
 }
 
 .button-yellow:hover {
-  background-color: #f59e0b;
-  /* Darker yellow on hover */
-}
-
-header a.button-yellow {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-}
-
-header {
-  height: 10%; /* Пример высоты в процентах */
-  display: flex;
-  justify-content: space-between; /* Выравнивание элементов по горизонтали */
-  padding: 1.5rem; /* Замените на нужное значение padding */
-  border-bottom: 1px solid #ccc; /* Пример границы снизу */
-}
-
-header h1,
-header p {
-  color: white; /* Цвет текста белый */
-}
-
-nav {
-  display: flex;
-  align-items: center; /* Выровнять элементы по вертикали по центру */
-  gap: 1 rem; /* Примерное значение для space-x-6 */
+  @apply bg-yellow-600;
 }
 
 .header-logo {
-  width: 200px; /* Ширина логотипа */
-  height: 100px; /* Высота логотипа */
+  @apply w-52 h-24 bg-center bg-no-repeat bg-contain;
   background-image: url("img/logo.png");
-  background-size: contain; /* Подгоняет изображение по размеру блока */
-  background-repeat: no-repeat; /* Не повторять изображение */
-  background-position: center; /* Центрировать изображение внутри блока */
 }
 
 .hero-section {
-  /* Задаем фоновую картинку */
+  @apply bg-center bg-no-repeat flex flex-col justify-center items-center text-center h-55vh;
   background-image: url("img/hero.png");
-  /* Размер и повторение фона */
-  background-repeat: no-repeat;
-  background-position: center;
-  /* Добавляем высоту блока (если требуется) */
-  height: 55vh;
-  /* Выравнивание содержимого по центру */
-  display: flex;
-  flex-direction: column; /* Вертикальное направление для выравнивания */
-  justify-content: center; /* Выравнивание по вертикали */
-  align-items: center; /* Выравнивание по горизонтали */
-  text-align: center; /* Центрирование текста */
-}
-
-.hero-section .text-lg {
-  color: white; /* Цвет текста белый */
-}
-
-.hero-section .text-4xl {
-  color: white; /* Цвет текста белый */
-}
-
-.about-section {
-  height: 55vh;
-  display: flex;
-  flex-direction: column; /* Вертикальное направление для выравнивания */
-  justify-content: center; /* Выравнивание по вертикали */
-  align-items: center; /* Выравнивание по горизонтали */
-  text-align: center; /* Центрирование текста */
 }
 
 .services-section {
-  background-image: url("img/about.jpg"); /* Укажите путь к вашему изображению */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; /* Масштабирование изображения */
-  padding: 4rem 0; /* Примерные отступы */
-  color: white; /* Цвет текста для контраста */
+  @apply bg-center bg-no-repeat bg-cover text-white py-16;
+  background-image: url("img/about.jpg");
+}
+
+.footer-nav {
+  @apply flex justify-center mb-4;
+}
+
+img {
+  @apply border-none outline-none;
 }
