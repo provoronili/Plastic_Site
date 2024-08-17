@@ -33,7 +33,7 @@ header {
   height: 10%; /* Пример высоты в процентах */
   display: flex;
   justify-content: space-between; /* Выравнивание элементов по горизонтали */
-  padding: 1.5rem; /* Замените на нужное значение padding */
+  padding: 1rem; /* Замените на нужное значение padding */
   border-bottom: 1px solid #ccc; /* Пример границы снизу */
 }
 
@@ -59,18 +59,17 @@ nav {
 
 .hero-section {
   /* Задаем фоновую картинку */
-  background-image: url("img/hero.png");
+  background-image: url("img/hero.jpg");
   /* Размер и повторение фона */
   background-repeat: no-repeat;
   background-position: center;
-  /* Добавляем высоту блока (если требуется) */
-  height: 55vh;
   /* Выравнивание содержимого по центру */
   display: flex;
   flex-direction: column; /* Вертикальное направление для выравнивания */
   justify-content: center; /* Выравнивание по вертикали */
   align-items: center; /* Выравнивание по горизонтали */
   text-align: center; /* Центрирование текста */
+  height: 55vh;
 }
 
 .hero-section .text-lg {
@@ -82,12 +81,12 @@ nav {
 }
 
 .about-section {
-  height: 55vh;
   display: flex;
   flex-direction: column; /* Вертикальное направление для выравнивания */
   justify-content: center; /* Выравнивание по вертикали */
   align-items: center; /* Выравнивание по горизонтали */
   text-align: center; /* Центрирование текста */
+  height: 55vh;
 }
 
 .services-section {
@@ -97,4 +96,28 @@ nav {
   background-size: cover; /* Масштабирование изображения */
   padding: 4rem 0; /* Примерные отступы */
   color: white; /* Цвет текста для контраста */
+  height: 55vh;
+}
+
+.advantages-section {
+  height: 55vh;
+}
+
+.projects-section {
+  background-image: url("img/projects.jpg"); /* Укажите путь к вашему изображению */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Масштабирование изображения */
+  padding: 4rem 0; /* Примерные отступы */
+  color: white; /* Цвет текста для контраста */
+  height: 55vh;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center; /* Центрирует весь блок навигации */
+  align-items: center; /* Центрирует текст по вертикали внутри ссылок */
+  text-align: center;
+  gap: 0.8rem; /* Промежуток между элементами, эквивалентен space-x-4 */
+  flex-wrap: wrap; /* Если необходимо, элементы будут переходить на новую строку */
 }

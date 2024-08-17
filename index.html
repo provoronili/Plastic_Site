@@ -1,140 +1,248 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Отливка из пластика на месте</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body class="bg-white text-black font-sans">
-
-  <!-- Header -->
-  <header>
-    <div class="header-logo text-2xl font-bold"></div>
-    <nav class="hidden md:flex space-x-6">
-      <a href="#about" class="hover:text-blue-500">О нас</a>
-      <a href="#services" class="hover:text-blue-500">Услуги</a>
-      <a href="#advantages" class="hover:text-blue-500">Преимущества</a>
-      <a href="#projects" class="hover:text-blue-500">Проекты</a>
-      <a href="#contact" class="hover:text-blue-500">Контакты</a>
-      <a href="#contact" class="button-yellow">Связаться с нами</a>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero-section text-center bg-gray-100">
-    <h1 class="text-4xl font-bold mb-4">Отливка изделий из пластика на месте клиента</h1>
-    <p class="text-lg mb-8">Качество, надежность, оперативность — в каждом проекте</p>
-    <a href="#contact" class="button-yellow">Получить консультацию</a>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about-section text-center bg-gray-100">
-    <div class="">
-      <h2 class="text-3xl font-bold mb-4 text-center">О нас</h2>
-      <p class="text-lg">Мы предлагаем услуги по отливке изделий из пластика на месте клиента. С нами вы получите качественные и долговечные изделия, которые идеально подойдут под ваши нужды.</p>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services-section py-20 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">Наши Услуги</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Service Card -->
-        <div class="text-center p-6 bg-white shadow-md rounded-lg">
-          <div class="mb-4">
-            <img src="service-icon1.png" alt="Иконка услуги" class="w-16 h-16 mx-auto">
-          </div>
-          <h3 class="text-xl font-bold mb-2">Отливка бассейнов</h3>
-          <p>Мы предлагаем кастомные решения для отливки бассейнов любого размера и формы.</p>
-        </div>
-        <!-- Add more service cards as needed -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Advantages Section -->
-  <section id="advantages" class="py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">Почему выбирают нас</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Advantage Card -->
-        <div class="text-center p-6 bg-white shadow-md rounded-lg">
-          <div class="mb-4">
-            <img src="advantage-icon1.png" alt="Иконка преимущества" class="w-16 h-16 mx-auto">
-          </div>
-          <h3 class="text-xl font-bold mb-2">Мобильность</h3>
-          <p>Мы приедем к вам на объект и выполним все работы на месте, экономя ваше время и деньги.</p>
-        </div>
-        <!-- Add more advantage cards as needed -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">Наши Проекты</h2>
-      <div class="relative">
-        <div class="overflow-x-auto">
-          <!-- Add project images with descriptions as needed -->
-          <div class="inline-block mr-4">
-            <img src="project1.jpg" alt="Проект 1" class="w-80 h-auto rounded-lg shadow-md">
-            <p class="text-center mt-2">Описание проекта 1</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">Контакты</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <form class="space-y-4">
-          <div>
-            <label class="block text-lg">Имя</label>
-            <input type="text" class="w-full px-4 py-2 border rounded-lg" required>
-          </div>
-          <div>
-            <label class="block text-lg">Телефон</label>
-            <input type="tel" class="w-full px-4 py-2 border rounded-lg" required>
-          </div>
-          <div>
-            <label class="block text-lg">Сообщение</label>
-            <textarea class="w-full px-4 py-2 border rounded-lg" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="button-yellow">Отправить</button>
-        </form>
-        <div>
-          <h3 class="text-xl font-bold mb-4">Связаться с нами</h3>
-          <p>Телефон: +7 123 456 7890</p>
-          <p>Email: info@example.com</p>
-          <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
-          <!-- Include an interactive map if needed -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-8 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <div class="mb-4">
-        <div class="text-2xl font-bold"></div>
-      </div>
-      <nav class="space-x-4 mb-4">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отливка из пластика на месте</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-white text-black font-sans">
+    <!-- Header -->
+    <header>
+      <div class="header-logo text-2xl font-bold"></div>
+      <nav class="hidden md:flex space-x-6">
         <a href="#about" class="hover:text-blue-500">О нас</a>
         <a href="#services" class="hover:text-blue-500">Услуги</a>
         <a href="#advantages" class="hover:text-blue-500">Преимущества</a>
         <a href="#projects" class="hover:text-blue-500">Проекты</a>
         <a href="#contact" class="hover:text-blue-500">Контакты</a>
+        <a href="#contact" class="button-yellow">Связаться с нами</a>
       </nav>
-      <p>© 2024, Название компании. Все права защищены.</p>
-    </div>
-  </footer>
+    </header>
 
-</body>
+    <!-- Hero Section -->
+    <section class="hero-section text-center bg-gray-100">
+      <h1 class="text-4xl font-bold mb-4">
+        Отливка изделий из пластика на месте клиента
+      </h1>
+      <p class="text-lg mb-8">
+        Качество, надежность, оперативность — в каждом проекте
+      </p>
+      <a href="#contact" class="button-yellow">Получить консультацию</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center bg-gray-100">
+      <div class="">
+        <h2 class="text-3xl font-bold mb-4 text-center">О нас</h2>
+        <p class="text-lg">
+          Мы предлагаем услуги по отливке изделий из пластика на месте клиента.
+          С нами вы получите качественные и долговечные изделия, которые
+          идеально подойдут под ваши нужды.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-20 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Наши Услуги</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Service Card -->
+          <div class="text-center p-6 bg-white shadow-md rounded-lg">
+            <div class="mb-4">
+              <img
+                src="service-icon1.png"
+                alt="Иконка услуги"
+                class="w-16 h-16 mx-auto"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">Отливка бассейнов</h3>
+            <p>
+              Мы предлагаем кастомные решения для отливки бассейнов любого
+              размера и формы.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-white shadow-md rounded-lg">
+            <div class="mb-4">
+              <img
+                src="service-icon1.png"
+                alt="Иконка услуги"
+                class="w-16 h-16 mx-auto"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">Отливка бассейнов</h3>
+            <p>
+              Мы предлагаем кастомные решения для отливки бассейнов любого
+              размера и формы.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-white shadow-md rounded-lg">
+            <div class="mb-4">
+              <img
+                src="service-icon1.png"
+                alt="Иконка услуги"
+                class="w-16 h-16 mx-auto"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">Отливка бассейнов</h3>
+            <p>
+              Мы предлагаем кастомные решения для отливки бассейнов любого
+              размера и формы.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-white shadow-md rounded-lg">
+            <div class="mb-4">
+              <img
+                src="service-icon1.png"
+                alt="Иконка услуги"
+                class="w-16 h-16 mx-auto"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">Отливка бассейнов</h3>
+            <p>
+              Мы предлагаем кастомные решения для отливки бассейнов любого
+              размера и формы.
+            </p>
+          </div>
+          <!-- Add more service cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="advantages-section py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Почему выбирают нас
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Advantage Card -->
+          <div class="text-center p-6 bg-white shadow-md rounded-lg">
+            <div class="mb-4">
+              <img
+                src="advantage-icon1.png"
+                alt="Иконка преимущества"
+                class="w-16 h-16 mx-auto"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">Мобильность</h3>
+            <p>
+              Мы приедем к вам на объект и выполним все работы на месте, экономя
+              ваше время и деньги.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-white shadow-md rounded-lg">
+            <div class="mb-4">
+              <img
+                src="advantage-icon1.png"
+                alt="Иконка преимущества"
+                class="w-16 h-16 mx-auto"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">Мобильность</h3>
+            <p>
+              Мы приедем к вам на объект и выполним все работы на месте, экономя
+              ваше время и деньги.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-white shadow-md rounded-lg">
+            <div class="mb-4">
+              <img
+                src="advantage-icon1.png"
+                alt="Иконка преимущества"
+                class="w-16 h-16 mx-auto"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">Мобильность</h3>
+            <p>
+              Мы приедем к вам на объект и выполним все работы на месте, экономя
+              ваше время и деньги.
+            </p>
+          </div>
+          <!-- Add more advantage cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Наши Проекты</h2>
+        <div class="relative">
+          <div class="overflow-x-auto">
+            <!-- Add project images with descriptions as needed -->
+            <div class="inline-block mr-4">
+              <img
+                src="project1.jpg"
+                alt="Проект 1"
+                class="w-80 h-auto rounded-lg shadow-md"
+              />
+              <p class="text-center mt-2">Описание проекта 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Контакты</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <form class="space-y-4">
+            <div>
+              <label class="block text-lg">Имя</label>
+              <input
+                type="text"
+                class="w-full px-4 py-2 border rounded-lg"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-lg">Телефон</label>
+              <input
+                type="tel"
+                class="w-full px-4 py-2 border rounded-lg"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-lg">Сообщение</label>
+              <textarea
+                class="w-full px-4 py-2 border rounded-lg"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="button-yellow">Отправить</button>
+          </form>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Связаться с нами</h3>
+            <p>Телефон: +7 123 456 7890</p>
+            <p>Email: info@example.com</p>
+            <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
+            <!-- Include an interactive map if needed -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <div class="mb-4">
+          <div class="text-2xl font-bold"></div>
+        </div>
+        <nav class="footer-nav space-x-4 mb-4">
+          <a href="#about" class="hover:text-blue-500">О нас</a>
+          <a href="#services" class="hover:text-blue-500">Услуги</a>
+          <a href="#advantages" class="hover:text-blue-500">Преимущества</a>
+          <a href="#projects" class="hover:text-blue-500">Проекты</a>
+          <a href="#contact" class="hover:text-blue-500">Контакты</a>
+        </nav>
+        <p>© 2024, Мюнхгаузен. Все права защищены.</p>
+      </div>
+    </footer>
+  </body>
 </html>
