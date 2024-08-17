@@ -1,15 +1,16 @@
 /* Tailwind base styles */
-@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+@import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
 
 /* Custom styles */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .button-yellow {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #fbbf24; /* Yellow color */
+  background-color: #fbbf24;
+  /* Yellow color */
   color: #fff;
   border-radius: 0.5rem;
   text-align: center;
@@ -19,10 +20,63 @@ body {
 }
 
 .button-yellow:hover {
-  background-color: #f59e0b; /* Darker yellow on hover */
+  background-color: #f59e0b;
+  /* Darker yellow on hover */
 }
 
 header a.button-yellow {
   padding: 0.5rem 1rem;
   font-size: 1rem;
+}
+
+.hero-section {
+  /* Задаем фоновую картинку */
+  background-image: url("img/hero.png");
+  /* Размер и повторение фона */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Добавляем высоту блока (если требуется) */
+  height: 50vh;
+  /* Выравнивание содержимого по центру */
+  display: flex;
+  flex-direction: column; /* Вертикальное направление для выравнивания */
+  justify-content: center; /* Выравнивание по вертикали */
+  align-items: center; /* Выравнивание по горизонтали */
+  text-align: center; /* Центрирование текста */
+}
+
+.hero-section .text-lg {
+  color: white; /* Цвет текста белый */
+}
+
+.hero-section .text-4xl {
+  color: white; /* Цвет текста белый */
+}
+
+header {
+  height: 10%; /* Пример высоты в процентах */
+  display: flex;
+  justify-content: space-between; /* Выравнивание элементов по горизонтали */
+  padding: 1.5rem; /* Замените на нужное значение padding */
+  border-bottom: 1px solid #ccc; /* Пример границы снизу */
+}
+
+header h1,
+header p {
+  color: white; /* Цвет текста белый */
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Выровнять элементы по вертикали по центру */
+  gap: 1 rem; /* Примерное значение для space-x-6 */
+}
+
+.header-logo {
+  width: 200px; /* Ширина логотипа */
+  height: 100px; /* Высота логотипа */
+  background-image: url("img/logo.png");
+  background-size: contain; /* Подгоняет изображение по размеру блока */
+  background-repeat: no-repeat; /* Не повторять изображение */
+  background-position: center; /* Центрировать изображение внутри блока */
 }
