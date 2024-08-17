@@ -1,0 +1,28 @@
+/* Tailwind base styles */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+/* Custom styles */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.button-yellow {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #fbbf24; /* Yellow color */
+  color: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-yellow:hover {
+  background-color: #f59e0b; /* Darker yellow on hover */
+}
+
+header a.button-yellow {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
