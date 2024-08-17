@@ -30,32 +30,32 @@ header a.button-yellow {
 }
 
 header {
-    height: 10%; /* Пример высоты в процентах */
-    display: flex;
-    justify-content: space-between; /* Выравнивание элементов по горизонтали */
-    padding: 1.5rem; /* Замените на нужное значение padding */
-    border-bottom: 1px solid #ccc; /* Пример границы снизу */
-  }
-  
-  header h1,
-  header p {
-    color: white; /* Цвет текста белый */
-  }
-  
-  nav {
-    display: flex;
-    align-items: center; /* Выровнять элементы по вертикали по центру */
-    gap: 1 rem; /* Примерное значение для space-x-6 */
-  }
-  
-  .header-logo {
-    width: 200px; /* Ширина логотипа */
-    height: 100px; /* Высота логотипа */
-    background-image: url("img/logo.png");
-    background-size: contain; /* Подгоняет изображение по размеру блока */
-    background-repeat: no-repeat; /* Не повторять изображение */
-    background-position: center; /* Центрировать изображение внутри блока */
-  }
+  height: 10%; /* Пример высоты в процентах */
+  display: flex;
+  justify-content: space-between; /* Выравнивание элементов по горизонтали */
+  padding: 1.5rem; /* Замените на нужное значение padding */
+  border-bottom: 1px solid #ccc; /* Пример границы снизу */
+}
+
+header h1,
+header p {
+  color: white; /* Цвет текста белый */
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Выровнять элементы по вертикали по центру */
+  gap: 1 rem; /* Примерное значение для space-x-6 */
+}
+
+.header-logo {
+  width: 200px; /* Ширина логотипа */
+  height: 100px; /* Высота логотипа */
+  background-image: url("img/logo.png");
+  background-size: contain; /* Подгоняет изображение по размеру блока */
+  background-repeat: no-repeat; /* Не повторять изображение */
+  background-position: center; /* Центрировать изображение внутри блока */
+}
 
 .hero-section {
   /* Задаем фоновую картинку */
@@ -81,14 +81,20 @@ header {
   color: white; /* Цвет текста белый */
 }
 
-.services-section {
-    background-image: url('img/about.jpg'); /* Укажите путь к вашему изображению */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; /* Масштабирование изображения */
-    padding: 4rem 0; /* Примерные отступы */
-    color: white; /* Цвет текста для контраста */
+.about-section {
+  height: 55vh;
+  display: flex;
+  flex-direction: column; /* Вертикальное направление для выравнивания */
+  justify-content: center; /* Выравнивание по вертикали */
+  align-items: center; /* Выравнивание по горизонтали */
+  text-align: center; /* Центрирование текста */
 }
 
-
-
+.services-section {
+  background-image: url("img/about.jpg"); /* Укажите путь к вашему изображению */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Масштабирование изображения */
+  padding: 4rem 0; /* Примерные отступы */
+  color: white; /* Цвет текста для контраста */
+}
