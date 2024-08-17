@@ -9,8 +9,8 @@
 <body class="bg-white text-black font-sans">
 
   <!-- Header -->
-  <header class="flex justify-between items-center p-6 border-b border-gray-300">
-    <div class="header-logo"></div>
+  <header>
+    <div class="header-logo text-2xl font-bold"></div>
     <nav class="hidden md:flex space-x-6">
       <a href="#about" class="hover:text-blue-500">О нас</a>
       <a href="#services" class="hover:text-blue-500">Услуги</a>
@@ -22,28 +22,30 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero-section text-center">
-    <h1 class="text-4xl font-bold mb-4 text-white">Отливка изделий из пластика на месте клиента</h1>
-    <p class="text-lg mb-8 text-white">Качество, надежность, оперативность — в каждом проекте</p>
+  <section class="hero-section text-center bg-gray-100">
+    <h1 class="text-4xl font-bold mb-4">Отливка изделий из пластика на месте клиента</h1>
+    <p class="text-lg mb-8">Качество, надежность, оперативность — в каждом проекте</p>
     <a href="#contact" class="button-yellow">Получить консультацию</a>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="text-center">
-      <h2 class="text-3xl font-bold mb-4">О нас</h2>
+  <section id="about" class="about-section text-center bg-gray-100">
+    <div class="">
+      <h2 class="text-3xl font-bold mb-4 text-center">О нас</h2>
       <p class="text-lg">Мы предлагаем услуги по отливке изделий из пластика на месте клиента. С нами вы получите качественные и долговечные изделия, которые идеально подойдут под ваши нужды.</p>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="services-section">
+  <section id="services" class="services-section py-20 bg-gray-100">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-12">Наши Услуги</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Service Card -->
         <div class="text-center p-6 bg-white shadow-md rounded-lg">
-          <img src="service-icon1.png" alt="Иконка услуги" class="w-16 h-16 mx-auto mb-4">
+          <div class="mb-4">
+            <img src="service-icon1.png" alt="Иконка услуги" class="w-16 h-16 mx-auto">
+          </div>
           <h3 class="text-xl font-bold mb-2">Отливка бассейнов</h3>
           <p>Мы предлагаем кастомные решения для отливки бассейнов любого размера и формы.</p>
         </div>
@@ -59,7 +61,9 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Advantage Card -->
         <div class="text-center p-6 bg-white shadow-md rounded-lg">
-          <img src="advantage-icon1.png" alt="Иконка преимущества" class="w-16 h-16 mx-auto mb-4">
+          <div class="mb-4">
+            <img src="advantage-icon1.png" alt="Иконка преимущества" class="w-16 h-16 mx-auto">
+          </div>
           <h3 class="text-xl font-bold mb-2">Мобильность</h3>
           <p>Мы приедем к вам на объект и выполним все работы на месте, экономя ваше время и деньги.</p>
         </div>
@@ -72,13 +76,14 @@
   <section id="projects" class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-12">Наши Проекты</h2>
-      <div class="overflow-x-auto flex space-x-4">
-        <!-- Project Card -->
-        <div class="w-80 h-auto rounded-lg shadow-md">
-          <img src="project1.jpg" alt="Проект 1" class="w-full h-auto rounded-lg">
-          <p class="text-center mt-2">Описание проекта 1</p>
+      <div class="relative">
+        <div class="overflow-x-auto">
+          <!-- Add project images with descriptions as needed -->
+          <div class="inline-block mr-4">
+            <img src="project1.jpg" alt="Проект 1" class="w-80 h-auto rounded-lg shadow-md">
+            <p class="text-center mt-2">Описание проекта 1</p>
+          </div>
         </div>
-        <!-- Add more project cards as needed -->
       </div>
     </div>
   </section>
@@ -115,17 +120,19 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-8 bg-gray-100 text-center">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-2xl font-bold mb-4"></div>
-      <nav class="footer-nav space-x-4">
+  <footer class="py-8 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <div class="mb-4">
+        <div class="text-2xl font-bold"></div>
+      </div>
+      <nav class="space-x-4 mb-4">
         <a href="#about" class="hover:text-blue-500">О нас</a>
         <a href="#services" class="hover:text-blue-500">Услуги</a>
         <a href="#advantages" class="hover:text-blue-500">Преимущества</a>
         <a href="#projects" class="hover:text-blue-500">Проекты</a>
         <a href="#contact" class="hover:text-blue-500">Контакты</a>
       </nav>
-      <p>© 2024, Мюнхгаузен. Все права защищены.</p>
+      <p>© 2024, Название компании. Все права защищены.</p>
     </div>
   </footer>
 
