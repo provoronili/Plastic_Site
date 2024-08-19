@@ -34,7 +34,6 @@ header {
   display: flex;
   justify-content: space-between; /* Выравнивание элементов по горизонтали */
   padding: 1rem; /* Замените на нужное значение padding */
-  border-bottom: 1px solid #ccc; /* Пример границы снизу */
 }
 
 header h1,
@@ -69,7 +68,7 @@ nav {
   justify-content: center; /* Выравнивание по вертикали */
   align-items: center; /* Выравнивание по горизонтали */
   text-align: center; /* Центрирование текста */
-  height: 55vh;
+  min-height: 55vh;
 }
 
 .hero-section .text-lg {
@@ -86,7 +85,7 @@ nav {
   justify-content: center; /* Выравнивание по вертикали */
   align-items: center; /* Выравнивание по горизонтали */
   text-align: center; /* Центрирование текста */
-  height: 55vh;
+  min-height: 55vh;
 }
 
 .services-section {
@@ -96,11 +95,11 @@ nav {
   background-size: cover; /* Масштабирование изображения */
   padding: 4rem 0; /* Примерные отступы */
   color: white; /* Цвет текста для контраста */
-  height: 55vh;
+  min-height: 55vh;
 }
 
 .advantages-section {
-  height: 55vh;
+  min-height: 55vh;
 }
 
 .projects-section {
@@ -110,7 +109,7 @@ nav {
   background-size: cover; /* Масштабирование изображения */
   padding: 4rem 0; /* Примерные отступы */
   color: white; /* Цвет текста для контраста */
-  height: 55vh;
+  min-height: 55vh;
 }
 
 .footer-nav {
